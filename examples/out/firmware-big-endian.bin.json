@@ -1,0 +1,79 @@
+{
+  "blockers": [
+    {
+      "code": "BIG_ENDIAN_ARM_UNSUPPORTED",
+      "detail": "A big-endian ARM-style vector table is the best explanation for the leading bytes; REA documents big-endian ARM as unsupported.",
+      "doc_url": "https://github.com/morluto/rea/blob/main/docs/providers/raw-binary.md#limitations",
+      "witness": {
+        "endian": "big",
+        "offset": 0,
+        "score": "15/15",
+        "thumb_handlers": [
+          {
+            "index": 1,
+            "offset": 4,
+            "target": "0x100",
+            "value": "0x101"
+          },
+          {
+            "index": 2,
+            "offset": 8,
+            "target": "0x108",
+            "value": "0x109"
+          },
+          {
+            "index": 3,
+            "offset": 12,
+            "target": "0x110",
+            "value": "0x111"
+          },
+          {
+            "index": 4,
+            "offset": 16,
+            "target": "0x118",
+            "value": "0x119"
+          },
+          {
+            "index": 5,
+            "offset": 20,
+            "target": "0x120",
+            "value": "0x121"
+          },
+          {
+            "index": 6,
+            "offset": 24,
+            "target": "0x128",
+            "value": "0x129"
+          },
+          {
+            "index": 7,
+            "offset": 28,
+            "target": "0x130",
+            "value": "0x131"
+          },
+          {
+            "index": 8,
+            "offset": 32,
+            "target": "0x138",
+            "value": "0x139"
+          }
+        ],
+        "word0_stack_pointer": {
+          "offset": 0,
+          "value": "0x20001000"
+        }
+      }
+    }
+  ],
+  "confidence": "medium",
+  "container": "raw",
+  "file": "firmware-big-endian.bin",
+  "notes": [
+    "No little-endian vector-table evidence was found; the big-endian read is the best remaining explanation, not a certainty."
+  ],
+  "recommended": "Documented as unsupported; extract a container or obtain a little-endian image.",
+  "sha256_12": "7abba40dbdfb",
+  "size": 576,
+  "tool": "rea-raw-preflight",
+  "verdict": "BLOCKED"
+}

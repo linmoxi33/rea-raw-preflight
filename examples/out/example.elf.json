@@ -1,0 +1,14 @@
+{
+  "blockers": [],
+  "confidence": "high",
+  "container": "ELF",
+  "file": "example.elf",
+  "notes": [
+    "Container recognised by magic bytes; the raw-binary limits quoted here are about headerless blobs and do not apply to this file."
+  ],
+  "recommended": "Hand REA the ELF file directly; no raw-binary workaround needed.",
+  "sha256_12": "6c5d3de6d74e",
+  "size": 224,
+  "tool": "rea-raw-preflight",
+  "verdict": "CONTAINER_PATH"
+}

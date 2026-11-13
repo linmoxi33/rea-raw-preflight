@@ -1,0 +1,20 @@
+{
+  "blockers": [
+    {
+      "code": "FIXED_LOAD_ADDRESS_REQUIRED",
+      "detail": "No container header (ELF/Mach-O/PE) found, so no load address, entry point or memory map can be discovered from the file bytes. REA's raw-binary increment documents that it does not guess these.",
+      "doc_url": "https://github.com/morluto/rea/blob/main/docs/providers/raw-binary.md#limitations"
+    }
+  ],
+  "confidence": "high",
+  "container": "raw",
+  "file": "opaque.bin",
+  "notes": [
+    "No container magic and no vector-table evidence; the file looks like an opaque blob."
+  ],
+  "recommended": "Supply --entry-point / load address yourself, or extract a container; REA documents that it will not guess them.",
+  "sha256_12": "ec9df2336ec9",
+  "size": 512,
+  "tool": "rea-raw-preflight",
+  "verdict": "NEEDS_ENTRY_POINT"
+}

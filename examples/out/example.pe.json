@@ -1,0 +1,15 @@
+{
+  "blockers": [],
+  "confidence": "high",
+  "container": "PE",
+  "file": "example.pe",
+  "notes": [
+    "Container recognised by magic bytes; the raw-binary limits quoted here are about headerless blobs and do not apply to this file.",
+    "PE layout confirmed (MZ plus the e_lfanew signature)."
+  ],
+  "recommended": "Hand REA the PE file directly; no raw-binary workaround needed.",
+  "sha256_12": "96b5d74d7958",
+  "size": 268,
+  "tool": "rea-raw-preflight",
+  "verdict": "CONTAINER_PATH"
+}

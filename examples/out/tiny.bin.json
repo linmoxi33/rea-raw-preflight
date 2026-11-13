@@ -1,0 +1,18 @@
+{
+  "blockers": [
+    {
+      "code": "INSUFFICIENT_BYTES_TO_CLASSIFY",
+      "detail": "Fewer than 64 bytes: not enough material to classify the file, and REA documents that it cannot remove its own representation limits.",
+      "doc_url": "https://github.com/morluto/rea/blob/main/docs/design/limits-and-recovery.md"
+    }
+  ],
+  "confidence": "low",
+  "container": "raw",
+  "file": "tiny.bin",
+  "notes": [],
+  "recommended": "Give REA an explicit entry point and memory map, or provide a container file; this file is too small to classify.",
+  "sha256_12": "b56d2194cade",
+  "size": 16,
+  "tool": "rea-raw-preflight",
+  "verdict": "ABSTAIN"
+}

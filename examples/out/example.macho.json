@@ -1,0 +1,14 @@
+{
+  "blockers": [],
+  "confidence": "high",
+  "container": "Mach-O",
+  "file": "example.macho",
+  "notes": [
+    "Container recognised by magic bytes; the raw-binary limits quoted here are about headerless blobs and do not apply to this file."
+  ],
+  "recommended": "Hand REA the Mach-O file directly; no raw-binary workaround needed.",
+  "sha256_12": "5a52d877e3dd",
+  "size": 224,
+  "tool": "rea-raw-preflight",
+  "verdict": "CONTAINER_PATH"
+}
